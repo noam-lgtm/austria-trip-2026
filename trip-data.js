@@ -2,16 +2,16 @@ window.TRIP_DATA = {
   booked: [
     ["16.9", "Klosterhof – Alpine Hideaway & Spa"],
     ["17.9", "Kempinski Hotel Berchtesgaden"],
+    ["18.9", "Hotel Seevilla Wolfgangsee"],
+    ["19.9", "Carpe Solem Kaprun Hotel 4-Sterne-Superior by ALPS RESORTS"],
     ["20–22.9", "TAUERN SPA Zell am See – Kaprun"]
   ],
   open: [
-    ["18.9", "מלון באזור Wolfgangsee", "Отель в районе Wolfgangsee"],
-    ["19.9", "לבדוק לילה נוסף ב־TAUERN SPA; אם אין, מלון ב־Kaprun", "Проверить дополнительную ночь в TAUERN SPA; если нет — отель в Kaprun"],
     ["22–24.9", "מלון Hallstatt / Obertraun", "Отель Hallstatt / Obertraun"],
     ["24.9", "מלון בווינה", "Отель в Вене"],
     ["25.9", "להזמין Sandbox VR בבוקר, עדיפות 10:00 / 10:40", "Забронировать Sandbox VR утром, лучше 10:00 / 10:40"]
   ],
-  routeStops: ["Salzburg", "Berchtesgaden", "Fantasiana", "Wolfgangsee", "Kaprun", "Gosausee", "Hallstatt", "Vienna", "VIE"],
+  routeStops: ["Salzburg", "Berchtesgaden", "Königssee", "Fantasiana?", "Wolfgangsee", "Kaprun", "Gosausee", "Hallstatt", "Vienna", "VIE"],
   days: [
     {
       iso:"2026-09-16", date:"16.9", wdHe:"רביעי", wdRu:"среда", badge:"booked", badgeHe:"✅ מלון סגור", badgeRu:"✅ Отель забронирован",
@@ -26,37 +26,47 @@ window.TRIP_DATA = {
     },
     {
       iso:"2026-09-17", date:"17.9", wdHe:"חמישי", wdRu:"четверг", badge:"booked", badgeHe:"✅ Kempinski סגור", badgeRu:"✅ Kempinski забронирован",
-      titleHe:"מכרה המלח + Königssee", titleRu:"Соляная шахта + Königssee",
-      summaryHe:"בוקר במכרה המלח, אחר כך שיט ב־Königssee, ובסוף יום רגוע ב־Kempinski.", summaryRu:"Утром соляная шахта, затем прогулка на кораблике по Königssee, а вечером спокойный отдых в Kempinski.",
-      hotel:"Kempinski Hotel Berchtesgaden", timingHe:"יעד למכרה: סביב 09:00", timingRu:"Соляная шахта: около 09:00", drive:"Klosterhof → Salzbergwerk → Königssee → Kempinski", mainHe:"Salzbergwerk Berchtesgaden + Königssee", mainRu:"Salzbergwerk Berchtesgaden + Königssee",
-      route:{o:"Klosterhof Alpine Hideaway & Spa, Bayerisch Gmain",d:"Kempinski Hotel Berchtesgaden",w:["Salzbergwerk Berchtesgaden","Königssee Seelände"]},
-      notesHe:["את המכרה כדאי להזמין אחרי הנחיתה.","Königssee נשאר גמיש לפי מזג האוויר.","במכרה בערך 12°C — לקחת שכבה קלה."], notesRu:["Соляную шахту лучше забронировать после прилёта.","Königssee оставляем гибким по погоде.","В шахте около 12°C — взять лёгкий тёплый слой."],
-      actions:[{t:"url",he:"🎟️ מכרה המלח",ru:"🎟️ Соляная шахта",url:"https://www.salzbergwerk.de/en/plan-a-visit"},{t:"map",he:"🅿️ Königssee",ru:"🅿️ Königssee",q:"Parkplatz Königssee Schönau am Königssee"}],
+      titleHe:"מכרה המלח → Kempinski", titleRu:"Соляная шахта → Kempinski",
+      summaryHe:"יוצאים מ־Klosterhof בנחת סביב 10:00–11:00 ועושים את Salzbergwerk כאטרקציה המרכזית של היום. אחר כך ממשיכים ל־Kempinski מוקדם מספיק כדי באמת ליהנות מהמלון. Königssee נשאר אופציה בלבד אם במקרה יש כוח וזמן — לא חובה ולא טירונות.",
+      summaryRu:"Спокойно выезжаем из Klosterhof примерно в 10:00–11:00 и делаем Salzbergwerk главным событием дня. Затем едем в Kempinski достаточно рано, чтобы действительно насладиться отелем. Königssee остаётся только бонусной опцией, если будут силы и время — без гонки.",
+      hotel:"Kempinski Hotel Berchtesgaden", timingHe:"יציאה רגועה 10:00–11:00 · המכרה בשעה נוחה לפי ההזמנה", timingRu:"Спокойный выезд 10:00–11:00 · шахта в удобное время по бронированию", drive:"Klosterhof → Salzbergwerk → Kempinski", mainHe:"Salzbergwerk Berchtesgaden + אחר הצהריים ב־Kempinski", mainRu:"Salzbergwerk Berchtesgaden + отдых в Kempinski",
+      route:{o:"Klosterhof Alpine Hideaway & Spa, Bayerisch Gmain",d:"Kempinski Hotel Berchtesgaden",w:["Salzbergwerk Berchtesgaden"]},
+      notesHe:["במכרה בערך 12°C — לקחת שכבה קלה.","Königssee לא נמחק: אם יש כוח אפשר לעשות אותו כבונוס; אם לא, הוא עובר ל־18.9.","ברירת המחדל: אטרקציה מרכזית אחת ואז מלון וספא."],
+      notesRu:["В шахте около 12°C — взять лёгкий тёплый слой.","Königssee не отменяется: если будут силы, можно добавить его бонусом; если нет — переносим на 18.9.","По умолчанию: одно главное событие, затем отель и SPA."],
+      actions:[{t:"url",he:"🎟️ מכרה המלח",ru:"🎟️ Соляная шахта",url:"https://www.salzbergwerk.de/en/plan-a-visit"},{t:"map",he:"🅿️ Königssee — רק אם מתחשק",ru:"🅿️ Königssee — только если захочется",q:"Parkplatz Königssee Schönau am Königssee"}],
       recs:[
         {n:"Bauchgfui",i:"🍽️",he:"ארוחה קלילה ואיכותית",ru:"Вкусный лёгкий обед",dh:"מעולה לצהריים אם רוצים משהו טוב בלי ארוחה כבדה.",dr:"Хороший вариант на обед без тяжёлого ресторана.",q:"Bauchgfui Berchtesgaden"},
         {n:"zum Gatsby",i:"🍸",he:"בר",ru:"Бар",dh:"אופציה לדרינק בערב אם נשאר כוח אחרי Kempinski.",dr:"Вариант для коктейля вечером, если после Kempinski ещё будут силы.",q:"zum Gatsby Berchtesgaden"}
       ]
     },
     {
-      iso:"2026-09-18", date:"18.9", wdHe:"שישי", wdRu:"пятница", badge:"open", badgeHe:"🟡 מלון פתוח", badgeRu:"🟡 Отель ещё не выбран",
-      titleHe:"Fantasiana + Wolfgangsee", titleRu:"Fantasiana + Wolfgangsee",
-      summaryHe:"פארק אחד לכל הטיול. מתקנים חזקים בשבילך, ומריה מקבלת פארק יפה, אווירה ודברים רגועים יותר. אחר הצהריים ממשיכים ל־Wolfgangsee.", summaryRu:"Один парк на всю поездку. Ноам получает более экстремальные аттракционы, Мария — красивый парк, атмосферу и спокойные развлечения. После обеда едем к Wolfgangsee.",
-      hotel:"St. Wolfgang / Wolfgangsee", timingHe:"Fantasiana בערך 10:00–15:30", timingRu:"Fantasiana примерно 10:00–15:30", drive:"Berchtesgaden → Fantasiana → St. Wolfgang", mainHe:"Fantasiana + ערב על האגם", mainRu:"Fantasiana + вечер у озера",
-      route:{o:"Kempinski Hotel Berchtesgaden",d:"St. Wolfgang im Salzkammergut",w:["FANTASIANA Erlebnispark Strasswalchen"]},
-      notesHe:["לא חייבים להישאר עד הסגירה.","בערב: אגם, שקיעה, ארוחה טובה וצילום."], notesRu:["Не обязательно оставаться до закрытия.","Вечером: озеро, закат, хороший ужин и фотографии."],
-      actions:[{t:"url",he:"🎢 Fantasiana",ru:"🎢 Fantasiana",url:"https://www.erlebnispark.at/"},{t:"map",he:"🅿️ חניה בפארק",ru:"🅿️ Парковка парка",q:"FANTASIANA Erlebnispark Parkplatz"}],
+      iso:"2026-09-18", date:"18.9", wdHe:"שישי", wdRu:"пятница", badge:"booked", badgeHe:"✅ Seevilla סגור", badgeRu:"✅ Seevilla забронирован",
+      titleHe:"Königssee / Fantasiana → Seevilla", titleRu:"Königssee / Fantasiana → Seevilla",
+      summaryHe:"יום גמיש בדרך ל־Wolfgangsee. אם Königssee לא נעשה ב־17.9 — הוא האטרקציה המרכזית של היום. אם כבר עשינו אותו ומזג האוויר והכוח מתאימים — Fantasiana נשאר אופציה מצוינת. לא דוחפים את שניהם בכוח. אחר הצהריים מגיעים ל־Seevilla ונהנים מהאגם, הספא והמלון.",
+      summaryRu:"Гибкий день по дороге к Wolfgangsee. Если Königssee не сделали 17.9 — он становится главным событием дня. Если уже сделали его и погода с настроением подходят — Fantasiana остаётся отличной опцией. Не пытаемся впихнуть оба места. После обеда приезжаем в Seevilla и наслаждаемся озером, SPA и отелем.",
+      hotel:"Hotel Seevilla Wolfgangsee", timingHe:"יציאה 10:00–11:00 · אטרקציה אחת עד בערך 15:00–16:00", timingRu:"Выезд 10:00–11:00 · одно главное развлечение примерно до 15:00–16:00", drive:"Kempinski → Königssee או Fantasiana → Seevilla Wolfgangsee", mainHe:"Königssee או Fantasiana + ערב ב־Seevilla", mainRu:"Königssee или Fantasiana + вечер в Seevilla",
+      route:{o:"Kempinski Hotel Berchtesgaden",d:"Hotel Seevilla Wolfgangsee",w:["Königssee Seelände"]},
+      notesHe:["Fantasiana נשאר ברשימה ולא יורד בלי החלטה שלנו.","אם בוחרים Fantasiana, לא מנסים לדחוף גם Königssee באותו יום.","המטרה להגיע ל־Seevilla עם מספיק זמן ליהנות מהמלון ולא רק לישון בו."],
+      notesRu:["Fantasiana остаётся в списке и не убирается без нашего решения.","Если выбираем Fantasiana, не пытаемся добавить ещё и Königssee в тот же день.","Цель — приехать в Seevilla достаточно рано, чтобы насладиться отелем, а не только переночевать."],
+      actions:[
+        {t:"map",he:"🚢 Königssee",ru:"🚢 Königssee",q:"Parkplatz Königssee Schönau am Königssee"},
+        {t:"url",he:"🎢 Fantasiana — אופציה",ru:"🎢 Fantasiana — опция",url:"https://www.erlebnispark.at/"},
+        {t:"map",he:"🏨 Seevilla",ru:"🏨 Seevilla",q:"Hotel Seevilla Wolfgangsee"}
+      ],
       recs:[
         {n:"PAUL der Wirt",i:"🍽️",he:"מסעדה ב־St. Wolfgang",ru:"Ресторан в St. Wolfgang",dh:"בחירה טובה ונוחה לערב ליד האגם.",dr:"Хороший и удобный вариант на вечер у озера.",q:"PAUL der Wirt St Wolfgang"},
         {n:"13er Haus",i:"🍸",he:"בר",ru:"Бар",dh:"אם בא לכם דרינק אחרי ארוחת הערב.",dr:"Если захочется выпить после ужина.",q:"13er Haus St Wolfgang"}
       ]
     },
     {
-      iso:"2026-09-19", date:"19.9", wdHe:"שבת", wdRu:"суббота", badge:"open", badgeHe:"🟡 לינה טרם סגורה", badgeRu:"🟡 Ночёвка ещё не решена",
-      titleHe:"SchafbergBahn → Kaprun", titleRu:"SchafbergBahn → Kaprun",
-      summaryHe:"עולים בבוקר ברכבת ההרים ל־Schafberg, נהנים מהנוף וחוזרים לאגם. אחר כך נוסעים לקאפרון.", summaryRu:"Утром поднимаемся на Schafberg на зубчатом поезде, наслаждаемся видом и возвращаемся к озеру. Затем едем в Kaprun.",
-      hotel:"TAUERN SPA אם מתפנה לילה 19→20 · אחרת מלון אחר ב־Kaprun", timingHe:"מומלץ: עלייה סביב 09:15", timingRu:"Рекомендуется подъём около 09:15", drive:"St. Wolfgang → Kaprun", mainHe:"SchafbergBahn + מעבר לקאפרון", mainRu:"SchafbergBahn + переезд в Kaprun",
-      route:{o:"St. Wolfgang im Salzkammergut",d:"Kaprun, Austria",w:["SchafbergBahn St. Wolfgang"]},
-      notesHe:["אחרי הנחיתה בודקים קודם אם התפנה לילה נוסף ב־TAUERN SPA.","אם מזג האוויר גרוע על ההר, לא נשרפים על כרטיסים סתם."], notesRu:["После прилёта сначала проверяем, освободилась ли дополнительная ночь в TAUERN SPA.","Если на горе плохая видимость, не тратим деньги на подъём зря."],
+      iso:"2026-09-19", date:"19.9", wdHe:"שבת", wdRu:"суббота", badge:"booked", badgeHe:"✅ Carpe Solem סגור", badgeRu:"✅ Carpe Solem забронирован",
+      titleHe:"SchafbergBahn → Carpe Solem Kaprun", titleRu:"SchafbergBahn → Carpe Solem Kaprun",
+      summaryHe:"בוקר רגוע ב־Seevilla ואז SchafbergBahn, בתנאי שהראות שווה את העלייה. אחר כך נוסעים לקאפרון, עושים צ׳ק־אין ב־Carpe Solem ונהנים מהספא ומהסאונה הפרטית בחדר.",
+      summaryRu:"Спокойное утро в Seevilla, затем SchafbergBahn — только если видимость действительно хорошая. После этого едем в Kaprun, заселяемся в Carpe Solem и отдыхаем в SPA и личной сауне в номере.",
+      hotel:"Carpe Solem Kaprun Hotel 4-Sterne-Superior by ALPS RESORTS", timingHe:"מכוונים לרכבת סביב 10:30–11:00, לפי זמינות וראות", timingRu:"Ориентир на поезд около 10:30–11:00, в зависимости от мест и видимости", drive:"Seevilla Wolfgangsee → SchafbergBahn → Carpe Solem Kaprun", mainHe:"SchafbergBahn + מעבר רגוע לקאפרון", mainRu:"SchafbergBahn + спокойный переезд в Kaprun",
+      route:{o:"Hotel Seevilla Wolfgangsee",d:"Carpe Solem Kaprun Hotel",w:["SchafbergBahn St. Wolfgang"]},
+      notesHe:["לבדוק מצלמות וראות לפני שקונים/עולים.","החדר ב־Carpe Solem כולל סאונה פרטית — משאירים לה זמן ולא מוסיפים עוד אטרקציה בכוח."],
+      notesRu:["Перед покупкой/подъёмом проверить веб-камеры и видимость.","В номере Carpe Solem есть личная сауна — оставляем на неё время и не добавляем ещё одну достопримечательность ради галочки."],
       actions:[{t:"url",he:"🚂 SchafbergBahn",ru:"🚂 SchafbergBahn",url:"https://www.5schaetze.at/en/schafbergbahn.html"},{t:"map",he:"🅿️ SchafbergBahn",ru:"🅿️ SchafbergBahn",q:"SchafbergBahn Parkplatz St Wolfgang"}], recs:[]
     },
     {
@@ -98,10 +108,12 @@ window.TRIP_DATA = {
     {
       iso:"2026-09-23", date:"23.9", wdHe:"רביעי", wdRu:"среда", badge:"weather", badgeHe:"🌦️ תלוי ראות", badgeRu:"🌦️ Зависит от видимости",
       titleHe:"Krippenstein + 5fingers", titleRu:"Krippenstein + 5fingers",
-      summaryHe:"עולים מוקדם ל־Krippenstein, תצפיות ו־5fingers. מריה לא חייבת לעלות על הפלטפורמות שמרגישות לה גבוהות מדי. אחר הצהריים חוזרים ל־Hallstatt.", summaryRu:"Рано поднимаемся на Krippenstein: смотровые площадки и 5fingers. Марии не обязательно выходить на платформы, если высота ей не понравится. После обеда возвращаемся в Hallstatt.",
-      hotel:"Hallstatt / Obertraun", timingHe:"מומלץ להגיע לרכבל מוקדם", timingRu:"Лучше приехать к канатной дороге рано", drive:"Hallstatt / Obertraun → Krippenstein → Hallstatt", mainHe:"Dachstein Krippenstein + 5fingers", mainRu:"Dachstein Krippenstein + 5fingers",
+      summaryHe:"אחרי בוקר רגוע עולים ל־Krippenstein לתצפיות ול־5fingers, בתנאי שהראות טובה. מריה לא חייבת לעלות על פלטפורמות שמרגישות לה גבוהות מדי. אחר הצהריים חוזרים ל־Hallstatt.",
+      summaryRu:"После спокойного утра поднимаемся на Krippenstein к смотровым площадкам и 5fingers, если видимость хорошая. Марии не обязательно выходить на платформы, если высота ей не понравится. После обеда возвращаемся в Hallstatt.",
+      hotel:"Hallstatt / Obertraun", timingHe:"יציאה רגועה סביב 10:00–11:00, בהתאם לראות ולשעות הרכבל", timingRu:"Спокойный выезд около 10:00–11:00, в зависимости от видимости и расписания канатной дороги", drive:"Hallstatt / Obertraun → Krippenstein → Hallstatt", mainHe:"Dachstein Krippenstein + 5fingers", mainRu:"Dachstein Krippenstein + 5fingers",
       route:{o:"Hallstatt, Austria",d:"Hallstatt, Austria",w:["Dachstein Krippenstein Seilbahn, Obertraun"]},
-      notesHe:["אם הכול בעננים — לא עולים רק כי זה כתוב בתוכנית.","בלי מערת קרח. נשארים בחוץ, בנוף."], notesRu:["Если всё в облаках — не поднимаемся только потому, что так написано в плане.","Без ледяных пещер. Остаёмся снаружи и наслаждаемся видами."],
+      notesHe:["5fingers הוא היילייט שלא מורידים מהמסלול בלי החלטה שלנו.","אם הכול בעננים — לא עולים סתם; מזיזים או מחליטים יחד מה עושים.","בלי מערת קרח. נשארים בחוץ, בנוף."],
+      notesRu:["5fingers — один из главных пунктов поездки и не убирается без нашего решения.","Если всё в облаках — не поднимаемся зря; переносим или решаем вместе, что делать.","Без ледяных пещер. Остаёмся снаружи и наслаждаемся видами."],
       actions:[{t:"url",he:"🚠 Krippenstein",ru:"🚠 Krippenstein",url:"https://www.dachstein-salzkammergut.com/en/"},{t:"map",he:"🅿️ תחנת הרכבל",ru:"🅿️ Канатная дорога",q:"Dachstein Krippenstein Seilbahn Parkplatz Obertraun"}],
       recs:[{n:"The Wolf Cafe Bistro Bar",i:"☕",he:"קפה / בר קטן",ru:"Кафе / небольшой бар",dh:"אופציה קלילה אם לא מתחשק ערב מסעדה מלא.",dr:"Лёгкий вариант, если не хочется полноценного ужина.",q:"The Wolf Cafe Bistro Bar Hallstatt"}]
     },
