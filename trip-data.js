@@ -40,16 +40,21 @@ window.TRIP_DATA = {
       ]
     },
     {
-      iso:"2026-09-18", date:"18.9", wdHe:"שישי", wdRu:"пятница", badge:"booked", badgeHe:"✅ Seevilla סגור", badgeRu:"✅ Seevilla забронирован",
-      titleHe:"Fantasiana — אופציה → Seevilla", titleRu:"Fantasiana — опция → Seevilla",
-      summaryHe:"אחרי Königssee והמכרה ביום הקודם, ה־18 נשאר יום מעבר רגוע ל־Wolfgangsee. אם מזג האוויר טוב ויש כוח, Fantasiana נשאר אופציה של 3–4 שעות בדרך. אם לא, לא מחפשים בכוח אטרקציה אחרת — נוסעים בנחת ל־Seevilla ונהנים מהאגם, הספא והמלון. אם Königssee לא בוצע ב־17 מסיבה אמיתית, הוא קודם ל־Fantasiana.",
-      summaryRu:"После Königssee и шахты накануне 18-е остаётся спокойным днём переезда к Wolfgangsee. Если погода хорошая и есть желание, Fantasiana остаётся опцией на 3–4 часа по дороге. Если нет — не ищем замену ради галочки, спокойно едем в Seevilla и наслаждаемся озером, SPA и отелем. Если Königssee по объективной причине не состоится 17-го, он имеет приоритет перед Fantasiana.",
-      hotel:"Hotel Seevilla Wolfgangsee", timingHe:"יציאה רגועה 10:00–11:00 · אם Fantasiana אז כמה שעות בלבד · להגיע ל־Seevilla אחר הצהריים", timingRu:"Спокойный выезд 10:00–11:00 · если Fantasiana, то только на несколько часов · приехать в Seevilla во второй половине дня", drive:"Kempinski → Fantasiana (אופציונלי) → Seevilla Wolfgangsee", mainHe:"יום גמיש + Seevilla", mainRu:"Гибкий день + Seevilla",
+      iso:"2026-09-18", date:"18.9", wdHe:"שישי", wdRu:"пятница", badge:"booked", badgeHe:"✅ Seevilla סגור · יום גמיש", badgeRu:"✅ Seevilla забронирован · гибкий день",
+      titleHe:"פארק / נוף / גשם → Seevilla", titleRu:"Парк / панорамы / дождь → Seevilla",
+      summaryHe:"אחרי שמכרה המלח ו־Königssee נסגרו ב־17, מחר נשאר גמיש. בבוקר מסתכלים על מזג האוויר ובוחרים מסלול אחד: אם יבש ובא פארק — Fantasiana; אם הראות טובה — Rossfeld Panoramastraße ובדרך אפשר Sommerrodelbahn Strobl; אם גשום — Hangar-7. בכל מקרה מסיימים ב־Seevilla עם מספיק זמן לאגם, ספא ומלון.",
+      summaryRu:"После соляной шахты и Königssee 17-го следующий день остаётся гибким. Утром смотрим погоду и выбираем один вариант: если сухо и хочется парка — Fantasiana; если хорошая видимость — Rossfeld Panoramastraße и по дороге можно Sommerrodelbahn Strobl; если дождь — Hangar-7. В любом случае заканчиваем день в Seevilla с достаточным временем для озера, SPA и отеля.",
+      hotel:"Hotel Seevilla Wolfgangsee", timingHe:"יציאה רגועה 10:00–11:00 · בוחרים מסלול אחד לפי מזג האוויר · להגיע ל־Seevilla אחר הצהריים", timingRu:"Спокойный выезд 10:00–11:00 · выбираем один вариант по погоде · приехать в Seevilla во второй половине дня", drive:"Kempinski → אופציה אחת בדרך → Seevilla Wolfgangsee", mainHe:"יום בחירה: Fantasiana / Rossfeld / Hangar-7", mainRu:"День выбора: Fantasiana / Rossfeld / Hangar-7",
       route:{o:"Kempinski Hotel Berchtesgaden",d:"Hotel Seevilla Wolfgangsee"},
-      notesHe:["Fantasiana נשאר ברשימה ולא יורד בלי החלטה שלנו.","לא דוחפים אטרקציה רק כדי לסמן וי.","המטרה להגיע ל־Seevilla עם מספיק זמן ליהנות מהמלון ולא רק לישון בו."],
-      notesRu:["Fantasiana остаётся в списке и не убирается без нашего решения.","Не добавляем аттракцион только ради галочки.","Цель — приехать в Seevilla достаточно рано, чтобы насладиться отелем, а не только переночевать."],
+      notesHe:["לא עושים את כל האופציות באותו יום — בוחרים לפי מזג האוויר והחשק.","🎢 Fantasiana: הבחירה אם יבש ובא לכם כמה שעות של פארק.","🏔️ Rossfeld Panoramastraße: קלף חזק אם בבוקר יש ראות טובה; בערך 45–90 דקות ולא דורש יום שלם.","🛷 Sommerrodelbahn Strobl: תוספת קצרה ליד Wolfgangsee רק אם יבש ונשאר זמן.","🏎️ Hangar-7: אופציית הגשם החזקה — מטוסים, מכוניות F1 ומקום מקורה.","🌲 טבע כגיבוי: Hintersee + Zauberwald / Wimbachklamm או Gollinger Wasserfall + Bluntauseen. שומרים כאופציות ולא דוחפים בכוח.","🚠 Zwölferhorn נשאר אופציה אבל לא בעדיפות, כי SchafbergBahn כבר מתוכנן ל־19.9.","המטרה להגיע ל־Seevilla עם מספיק זמן ליהנות מהמלון ולא רק לישון בו."],
+      notesRu:["Не пытаемся сделать все варианты за один день — выбираем по погоде и настроению.","🎢 Fantasiana: вариант, если сухо и хочется несколько часов в парке.","🏔️ Rossfeld Panoramastraße: отличный вариант при хорошей видимости утром; примерно 45–90 минут и не требует целого дня.","🛷 Sommerrodelbahn Strobl: короткое дополнение у Wolfgangsee только если сухо и остаётся время.","🏎️ Hangar-7: сильный вариант на дождь — самолёты, машины F1 и крытое пространство.","🌲 Природный запасной вариант: Hintersee + Zauberwald / Wimbachklamm или Gollinger Wasserfall + Bluntauseen. Сохраняем как варианты и не перегружаем день.","🚠 Zwölferhorn остаётся опцией, но не в приоритете, потому что SchafbergBahn уже запланирован на 19.9.","Цель — приехать в Seevilla достаточно рано, чтобы насладиться отелем, а не только переночевать."],
       actions:[
-        {t:"url",he:"🎢 Fantasiana — אופציה",ru:"🎢 Fantasiana — опция",url:"https://www.erlebnispark.at/"},
+        {t:"url",he:"🎢 Fantasiana",ru:"🎢 Fantasiana",url:"https://www.erlebnispark.at/"},
+        {t:"url",he:"🏎️ Hangar-7",ru:"🏎️ Hangar-7",url:"https://www.hangar-7.com/en/"},
+        {t:"url",he:"🏔️ Rossfeld Panoramastraße",ru:"🏔️ Rossfeld Panoramastraße",url:"https://www.rossfeldpanoramastrasse.de/en/"},
+        {t:"url",he:"🛷 Sommerrodelbahn Strobl",ru:"🛷 Sommerrodelbahn Strobl",url:"https://wolfgangsee.salzkammergut.at/oesterreich-poi/detail/200461/sommerrodelbahn-strobl.html"},
+        {t:"map",he:"🌲 Hintersee + Zauberwald",ru:"🌲 Hintersee + Zauberwald",q:"Hintersee Ramsau Zauberwald"},
+        {t:"map",he:"💦 Gollinger Wasserfall",ru:"💦 Gollinger Wasserfall",q:"Gollinger Wasserfall"},
         {t:"map",he:"🏨 Seevilla",ru:"🏨 Seevilla",q:"Hotel Seevilla Wolfgangsee"}
       ],
       recs:[
