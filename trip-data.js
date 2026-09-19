@@ -11,7 +11,16 @@ window.TRIP_DATA = {
     ["24.9", "מלון בווינה", "Отель в Вене"],
     ["25.9", "להזמין Sandbox VR בבוקר, עדיפות 10:00 / 10:40", "Забронировать Sandbox VR утром, лучше 10:00 / 10:40"]
   ],
-  routeStops: ["Salzburg", "Berchtesgaden", "Königssee", "Fantasiana?", "Wolfgangsee", "Kaprun", "Gosausee", "Hallstatt", "Vienna", "VIE"],
+  routeStops: ["Salzburg", "Berchtesgaden", "Königssee", "Wolfgangsee", "St. Gilgen / Zwölferhorn", "Kaprun", "Gosausee", "Hallstatt", "Vienna", "VIE"],
+  nextTrip: [
+    {n:"SchafbergBahn",i:"🚂",he:"נשמר לטיול הבא",ru:"Оставили на следующую поездку",dh:"רכבת השיניים עד Schafbergspitze. ב־19.9 נשארו כרטיסים רק ל־14:30, אז בחרנו לא לבזבז חצי יום ולשמור את החוויה לפעם הבאה.",dr:"Зубчатая железная дорога до Schafbergspitze. 19.9 оставались билеты только на 14:30, поэтому решили не терять полдня и оставить поездку на следующий раз.",q:"SchafbergBahn St Wolfgang"},
+    {n:"FANTASIANA Erlebnispark",i:"🎢",he:"פארק שעשועים",ru:"Парк аттракционов",dh:"היה אופציה ליום המעבר ל־Wolfgangsee, אבל בפועל בחרנו ליהנות מהמלונות. נשמר כאופציה לטיול הבא.",dr:"Был вариантом на день переезда к Wolfgangsee, но мы выбрали время в отелях. Оставляем на следующую поездку.",q:"FANTASIANA Erlebnispark Strasswalchen"},
+    {n:"Rossfeld Panoramastraße",i:"🏔️",he:"כביש נופי",ru:"Панорамная дорога",dh:"כביש נופי באזור Berchtesgaden שלא הספקנו לעשות. מתאים ליום עם ראות טובה.",dr:"Панорамная дорога возле Berchtesgaden, которую не успели проехать. Хороша в день с ясной видимостью.",q:"Rossfeld Panoramastraße"},
+    {n:"Sommerrodelbahn Strobl",i:"🛷",he:"מגלשת הרים",ru:"Летняя санная трасса",dh:"אופציית אדרנלין קצרה ליד Wolfgangsee שלא עשינו הפעם.",dr:"Короткий вариант с адреналином возле Wolfgangsee, который в этот раз пропустили.",q:"Sommerrodelbahn Strobl"},
+    {n:"Hangar-7",i:"🏎️",he:"מטוסים ומכוניות",ru:"Самолёты и автомобили",dh:"אופציית הגשם שלנו בזלצבורג. לא יצא לעשות, אז נשמר לטיול הבא.",dr:"Наш вариант на дождливый день в Зальцбурге. Не успели — оставляем на следующий раз.",q:"Hangar-7 Salzburg"},
+    {n:"Hintersee + Zauberwald / Wimbachklamm",i:"🌲",he:"טבע באזור Berchtesgaden",ru:"Природа в районе Berchtesgaden",dh:"אגם, יער ונקיק שנשארו ברשימת האפשרויות ולא בוצעו.",dr:"Озеро, лес и ущелье остались в списке вариантов и не были сделаны.",q:"Hintersee Ramsau Zauberwald"},
+    {n:"Gollinger Wasserfall + Bluntauseen",i:"💦",he:"מפלים ואגמים",ru:"Водопад и озёра",dh:"מסלול טבע שנשאר כגיבוי ולא נכנס בפועל לטיול.",dr:"Природный маршрут, который оставался запасным вариантом и не вошёл в поездку.",q:"Gollinger Wasserfall"}
+  ],
   days: [
     {
       iso:"2026-09-16", date:"16.9", wdHe:"רביעי", wdRu:"среда", badge:"booked", badgeHe:"✅ בוצע", badgeRu:"✅ Выполнено",
@@ -25,53 +34,40 @@ window.TRIP_DATA = {
       actions:[{t:"map",he:"☕ 220GRAD Rupertinum",ru:"☕ 220GRAD Rupertinum",q:"220GRAD Rupertinum Salzburg"}], recs:[]
     },
     {
-      iso:"2026-09-17", date:"17.9", wdHe:"חמישי", wdRu:"четверг", badge:"booked", badgeHe:"✅ תוכנית סגורה + Kempinski", badgeRu:"✅ План готов + Kempinski",
-      titleHe:"Salzbergwerk → Königssee → Kempinski", titleRu:"Соляная шахта → Königssee → Kempinski",
-      summaryHe:"מחר עושים את שני ההיילייטים של אזור Berchtesgaden בלי להפוך את היום לטירונות: יוצאים מ־Klosterhof בנחת סביב 10:00–10:30, מתחילים במכרה המלח, אחריו עוברים ל־Königssee לשיט עד St. Bartholomä, ואז ממשיכים ל־Kempinski. Königssee הוא יעד חובה ולא אופציה.",
-      summaryRu:"Завтра делаем два главных пункта района Berchtesgaden без гонки: спокойно выезжаем из Klosterhof около 10:00–10:30, сначала соляная шахта, затем Königssee с прогулкой на кораблике до St. Bartholomä, после чего едем в Kempinski. Königssee — обязательный пункт, не опция.",
-      hotel:"Kempinski Hotel Berchtesgaden", timingHe:"יציאה 10:00–10:30 · מכרה בערך 11:00–13:00 · Königssee בערך 13:30/14:00–16:00/16:30", timingRu:"Выезд 10:00–10:30 · шахта примерно 11:00–13:00 · Königssee примерно 13:30/14:00–16:00/16:30", drive:"Klosterhof → Salzbergwerk → Königssee → Kempinski", mainHe:"Salzbergwerk Berchtesgaden + Königssee", mainRu:"Salzbergwerk Berchtesgaden + Königssee",
+      iso:"2026-09-17", date:"17.9", wdHe:"חמישי", wdRu:"четверг", badge:"booked", badgeHe:"✅ בוצע", badgeRu:"✅ Выполнено",
+      titleHe:"Salzbergwerk → Königssee → Kempinski · בוצע", titleRu:"Соляная шахта → Königssee → Kempinski · выполнено",
+      summaryHe:"בפועל נכנסנו ל־Salzbergwerk Berchtesgaden בשעה 13:20, ואחריו נסענו ל־Königssee. בחרנו בשיט הקצר והנכון לנו עד St. Bartholomä במקום המסלול הארוך ל־Salet/Obersee, ואז המשכנו ל־Kempinski. המלון הפך לחלק משמעותי מהחוויה: חדר בקומה העליונה עם נוף הרים ואח, ספא מצוין וארוחת בוקר מעולה.",
+      summaryRu:"Фактически в Salzbergwerk Berchtesgaden мы вошли в 13:20, затем поехали на Königssee. Выбрали спокойный короткий маршрут на кораблике до St. Bartholomä вместо длинного маршрута до Salet/Obersee, после чего отправились в Kempinski. Сам отель стал важной частью впечатлений: номер на верхнем этаже с видом на горы и камином, отличный SPA и прекрасный завтрак.",
+      hotel:"Kempinski Hotel Berchtesgaden", timingHe:"בוצע בפועל: מכרה 13:20 · Königssee + St. Bartholomä · Kempinski", timingRu:"По факту: шахта 13:20 · Königssee + St. Bartholomä · Kempinski", drive:"Klosterhof → Salzbergwerk → Königssee → Kempinski", mainHe:"מכרה המלח + שיט Königssee + Kempinski", mainRu:"Соляная шахта + Königssee + Kempinski",
       route:{o:"Klosterhof Alpine Hideaway & Spa, Bayerisch Gmain",d:"Kempinski Hotel Berchtesgaden",w:["Salzbergwerk Berchtesgaden","Königssee Seelände"]},
-      notesHe:["קודם המכרה כי הוא יותר קשיח מבחינת שעת כניסה; אחר כך האגם גמיש יותר.","במכרה בערך 12°C — לקחת שכבה קלה.","ב־Königssee המטרה היא שיט ל־St. Bartholomä, צילום וקצב רגוע — לא להוסיף עוד אטרקציות.","אם משהו חיצוני באמת מונע את Königssee, הוא מקבל עדיפות ב־18.9 לפני Fantasiana."],
-      notesRu:["Сначала шахта, потому что вход привязан ко времени; затем озеро, которое гибче по расписанию.","В шахте около 12°C — взять лёгкий тёплый слой.","На Königssee цель — кораблик до St. Bartholomä, фотографии и спокойный темп, без дополнительных аттракционов.","Если внешние обстоятельства действительно помешают Königssee, 18.9 он имеет приоритет перед Fantasiana."],
-      actions:[{t:"url",he:"🎟️ מכרה המלח",ru:"🎟️ Соляная шахта",url:"https://www.salzbergwerk.de/en/plan-a-visit"},{t:"map",he:"🚢 Königssee — חובה",ru:"🚢 Königssee — обязательно",q:"Parkplatz Königssee Schönau am Königssee"}],
-      recs:[
-        {n:"Bauchgfui",i:"🍽️",he:"ארוחה קלילה ואיכותית",ru:"Вкусный лёгкий обед",dh:"אם צריך משהו קצר וטוב בלי להפוך את הצהריים לארוחה של שעתיים.",dr:"Хороший вариант быстро и вкусно поесть, не превращая обед в двухчасовую остановку.",q:"Bauchgfui Berchtesgaden"},
-        {n:"zum Gatsby",i:"🍸",he:"בר",ru:"Бар",dh:"אופציה רק אם במקרה נשאר כוח אחרי Kempinski.",dr:"Только если после Kempinski ещё останутся силы.",q:"zum Gatsby Berchtesgaden"}
-      ]
+      notesHe:["Königssee היה יעד חובה ובוצע כמו שרצינו — שיט עד St. Bartholomä ובקצב רגוע.","Kempinski התחיל קצת פלצני בעינינו, אבל מהר מאוד הפך לאחד המלונות שהכי נהנינו מהם בזכות החדר, הנוף, הצוות והספא.","בערב יצאנו לאכול ב־Akropolis; היה בסדר, אבל לא משהו מיוחד."],
+      notesRu:["Königssee был обязательным пунктом и получился именно как хотели — кораблик до St. Bartholomä в спокойном темпе.","Сначала Kempinski показался немного слишком пафосным, но быстро стал одним из самых понравившихся отелей благодаря номеру, виду, персоналу и SPA.","Вечером поужинали в Akropolis; было нормально, но без особого восторга."],
+      actions:[{t:"url",he:"🎟️ Salzbergwerk",ru:"🎟️ Salzbergwerk",url:"https://www.salzbergwerk.de/en/plan-a-visit"},{t:"map",he:"🚢 Königssee",ru:"🚢 Königssee",q:"Königssee Seelände"},{t:"map",he:"🏨 Kempinski",ru:"🏨 Kempinski",q:"Kempinski Hotel Berchtesgaden"}],
+      recs:[]
     },
     {
-      iso:"2026-09-18", date:"18.9", wdHe:"שישי", wdRu:"пятница", badge:"booked", badgeHe:"✅ Seevilla סגור · יום גמיש", badgeRu:"✅ Seevilla забронирован · гибкий день",
-      titleHe:"פארק / נוף / גשם → Seevilla", titleRu:"Парк / панорамы / дождь → Seevilla",
-      summaryHe:"אחרי שמכרה המלח ו־Königssee נסגרו ב־17, מחר נשאר גמיש. בבוקר מסתכלים על מזג האוויר ובוחרים מסלול אחד: אם יבש ובא פארק — Fantasiana; אם הראות טובה — Rossfeld Panoramastraße ובדרך אפשר Sommerrodelbahn Strobl; אם גשום — Hangar-7. בכל מקרה מסיימים ב־Seevilla עם מספיק זמן לאגם, ספא ומלון.",
-      summaryRu:"После соляной шахты и Königssee 17-го следующий день остаётся гибким. Утром смотрим погоду и выбираем один вариант: если сухо и хочется парка — Fantasiana; если хорошая видимость — Rossfeld Panoramastraße и по дороге можно Sommerrodelbahn Strobl; если дождь — Hangar-7. В любом случае заканчиваем день в Seevilla с достаточным временем для озера, SPA и отеля.",
-      hotel:"Hotel Seevilla Wolfgangsee", timingHe:"יציאה רגועה 10:00–11:00 · בוחרים מסלול אחד לפי מזג האוויר · להגיע ל־Seevilla אחר הצהריים", timingRu:"Спокойный выезд 10:00–11:00 · выбираем один вариант по погоде · приехать в Seevilla во второй половине дня", drive:"Kempinski → אופציה אחת בדרך → Seevilla Wolfgangsee", mainHe:"יום בחירה: Fantasiana / Rossfeld / Hangar-7", mainRu:"День выбора: Fantasiana / Rossfeld / Hangar-7",
+      iso:"2026-09-18", date:"18.9", wdHe:"שישי", wdRu:"пятница", badge:"booked", badgeHe:"✅ בוצע · יום מלון", badgeRu:"✅ Выполнено · день отелей",
+      titleHe:"Kempinski עד 17:00 → Seevilla · בלי לרדוף אחרי אטרקציות", titleRu:"Kempinski до 17:00 → Seevilla · без гонки за достопримечательностями",
+      summaryHe:"בפועל לא עשינו אף אטרקציה ביום הזה — ובדיעבד זו הייתה החלטה מצוינת. נשארנו ב־Kempinski עד 17:00 ונהנינו מהמלון, הספא והנוף, ואז נסענו ישירות ל־Hotel Seevilla Wolfgangsee. הגענו בערך ב־18:15, קיבלנו חדר מעולה, ומריה אהבה את המקום כבר מהרגע הראשון. ארוחת הערב במסעדת המלון הייתה ממש מעולה.",
+      summaryRu:"В этот день мы фактически не делали ни одной достопримечательности — и это оказалось отличным решением. Остались в Kempinski до 17:00, наслаждались отелем, SPA и видом, затем поехали прямо в Hotel Seevilla Wolfgangsee. Приехали примерно в 18:15, получили отличный номер, и Марии место понравилось сразу. Ужин в ресторане отеля был действительно великолепным.",
+      hotel:"Hotel Seevilla Wolfgangsee", timingHe:"בוצע בפועל: Kempinski עד 17:00 · הגעה ל־Seevilla ב־18:15 · ארוחת ערב במלון", timingRu:"По факту: Kempinski до 17:00 · Seevilla в 18:15 · ужин в отеле", drive:"Kempinski Hotel Berchtesgaden → Hotel Seevilla Wolfgangsee", mainHe:"זמן איכות במלונות + Seevilla", mainRu:"Время в отелях + Seevilla",
       route:{o:"Kempinski Hotel Berchtesgaden",d:"Hotel Seevilla Wolfgangsee"},
-      notesHe:["לא עושים את כל האופציות באותו יום — בוחרים לפי מזג האוויר והחשק.","🎢 Fantasiana: הבחירה אם יבש ובא לכם כמה שעות של פארק.","🏔️ Rossfeld Panoramastraße: קלף חזק אם בבוקר יש ראות טובה; בערך 45–90 דקות ולא דורש יום שלם.","🛷 Sommerrodelbahn Strobl: תוספת קצרה ליד Wolfgangsee רק אם יבש ונשאר זמן.","🏎️ Hangar-7: אופציית הגשם החזקה — מטוסים, מכוניות F1 ומקום מקורה.","🌲 טבע כגיבוי: Hintersee + Zauberwald / Wimbachklamm או Gollinger Wasserfall + Bluntauseen. שומרים כאופציות ולא דוחפים בכוח.","🚠 Zwölferhorn נשאר אופציה אבל לא בעדיפות, כי SchafbergBahn כבר מתוכנן ל־19.9.","המטרה להגיע ל־Seevilla עם מספיק זמן ליהנות מהמלון ולא רק לישון בו."],
-      notesRu:["Не пытаемся сделать все варианты за один день — выбираем по погоде и настроению.","🎢 Fantasiana: вариант, если сухо и хочется несколько часов в парке.","🏔️ Rossfeld Panoramastraße: отличный вариант при хорошей видимости утром; примерно 45–90 минут и не требует целого дня.","🛷 Sommerrodelbahn Strobl: короткое дополнение у Wolfgangsee только если сухо и остаётся время.","🏎️ Hangar-7: сильный вариант на дождь — самолёты, машины F1 и крытое пространство.","🌲 Природный запасной вариант: Hintersee + Zauberwald / Wimbachklamm или Gollinger Wasserfall + Bluntauseen. Сохраняем как варианты и не перегружаем день.","🚠 Zwölferhorn остаётся опцией, но не в приоритете, потому что SchafbergBahn уже запланирован на 19.9.","Цель — приехать в Seevilla достаточно рано, чтобы насладиться отелем, а не только переночевать."],
-      actions:[
-        {t:"url",he:"🎢 Fantasiana",ru:"🎢 Fantasiana",url:"https://www.erlebnispark.at/"},
-        {t:"url",he:"🏎️ Hangar-7",ru:"🏎️ Hangar-7",url:"https://www.hangar-7.com/en/"},
-        {t:"url",he:"🏔️ Rossfeld Panoramastraße",ru:"🏔️ Rossfeld Panoramastraße",url:"https://www.rossfeldpanoramastrasse.de/en/"},
-        {t:"url",he:"🛷 Sommerrodelbahn Strobl",ru:"🛷 Sommerrodelbahn Strobl",url:"https://wolfgangsee.salzkammergut.at/oesterreich-poi/detail/200461/sommerrodelbahn-strobl.html"},
-        {t:"map",he:"🌲 Hintersee + Zauberwald",ru:"🌲 Hintersee + Zauberwald",q:"Hintersee Ramsau Zauberwald"},
-        {t:"map",he:"💦 Gollinger Wasserfall",ru:"💦 Gollinger Wasserfall",q:"Gollinger Wasserfall"},
-        {t:"map",he:"🏨 Seevilla",ru:"🏨 Seevilla",q:"Hotel Seevilla Wolfgangsee"}
-      ],
-      recs:[
-        {n:"PAUL der Wirt",i:"🍽️",he:"מסעדה ב־St. Wolfgang",ru:"Ресторан в St. Wolfgang",dh:"בחירה טובה ונוחה לערב ליד האגם.",dr:"Хороший и удобный вариант на вечер у озера.",q:"PAUL der Wirt St Wolfgang"},
-        {n:"13er Haus",i:"🍸",he:"בר",ru:"Бар",dh:"אם בא לכם דרינק אחרי ארוחת הערב.",dr:"Если захочется выпить после ужина.",q:"13er Haus St Wolfgang"}
-      ]
+      notesHe:["היום הזה חיזק את מה שכבר למדנו בטיול: המלונות עצמם הם חלק מרכזי מהחוויה ולא זמן מבוזבז.","Seevilla היה בחירה מצוינת — חדר מעולה, אגם, אווירה וארוחת ערב מצוינת.","כל האטרקציות שתוכננו כאופציות ליום הזה ולא בוצעו הועברו לרשימת 'לטיול הבא' ולא נמחקו."],
+      notesRu:["Этот день подтвердил главное открытие поездки: сами отели — важная часть отдыха, а не потерянное время.","Seevilla оказался отличным выбором: прекрасный номер, озеро, атмосфера и отличный ужин.","Все варианты достопримечательностей этого дня, которые не были сделаны, перенесены в список «на следующую поездку», а не удалены."],
+      actions:[{t:"map",he:"🏨 Seevilla Wolfgangsee",ru:"🏨 Seevilla Wolfgangsee",q:"Hotel Seevilla Wolfgangsee"}],
+      recs:[]
     },
     {
-      iso:"2026-09-19", date:"19.9", wdHe:"שבת", wdRu:"суббота", badge:"booked", badgeHe:"✅ Carpe Solem סגור", badgeRu:"✅ Carpe Solem забронирован",
-      titleHe:"SchafbergBahn → Carpe Solem Kaprun", titleRu:"SchafbergBahn → Carpe Solem Kaprun",
-      summaryHe:"בוקר רגוע ב־Seevilla ואז SchafbergBahn, בתנאי שהראות שווה את העלייה. אחר כך נוסעים לקאפרון, עושים צ׳ק־אין ב־Carpe Solem ונהנים מהספא ומהסאונה הפרטית בחדר.",
-      summaryRu:"Спокойное утро в Seevilla, затем SchafbergBahn — только если видимость действительно хорошая. После этого едем в Kaprun, заселяемся в Carpe Solem и отдыхаем в SPA и личной сауне в номере.",
-      hotel:"Carpe Solem Kaprun Hotel 4-Sterne-Superior by ALPS RESORTS", timingHe:"מכוונים לרכבת סביב 10:30–11:00, לפי זמינות וראות", timingRu:"Ориентир на поезд около 10:30–11:00, в зависимости от мест и видимости", drive:"Seevilla Wolfgangsee → SchafbergBahn → Carpe Solem Kaprun", mainHe:"SchafbergBahn + מעבר רגוע לקאפרון", mainRu:"SchafbergBahn + спокойный переезд в Kaprun",
-      route:{o:"Hotel Seevilla Wolfgangsee",d:"Carpe Solem Kaprun Hotel",w:["SchafbergBahn St. Wolfgang"]},
-      notesHe:["לבדוק מצלמות וראות לפני שקונים/עולים.","החדר ב־Carpe Solem כולל סאונה פרטית — משאירים לה זמן ולא מוסיפים עוד אטרקציה בכוח."],
-      notesRu:["Перед покупкой/подъёмом проверить веб-камеры и видимость.","В номере Carpe Solem есть личная сауна — оставляем на неё время и не добавляем ещё одну достопримечательность ради галочки."],
-      actions:[{t:"url",he:"🚂 SchafbergBahn",ru:"🚂 SchafbergBahn",url:"https://www.5schaetze.at/en/schafbergbahn.html"},{t:"map",he:"🅿️ SchafbergBahn",ru:"🅿️ SchafbergBahn",q:"SchafbergBahn Parkplatz St Wolfgang"}], recs:[]
+      iso:"2026-09-19", date:"19.9", wdHe:"שבת", wdRu:"суббота", badge:"booked", badgeHe:"✅ בוצע", badgeRu:"✅ Выполнено",
+      titleHe:"Zwölferhorn → Carpe Solem Kaprun · הפתעה מוצלחת", titleRu:"Zwölferhorn → Carpe Solem Kaprun · удачная импровизация",
+      summaryHe:"התכנון המקורי היה SchafbergBahn, אבל נשארו כרטיסים רק ל־14:30 ולכן החלטנו לא לבזבז את היום בהמתנה. במקום זה נסענו ל־St. Gilgen ועלינו ב־Zwölferhorn Seilbahn. הרכבל היה זמין, נוח וזול יותר מהרכבת, והנוף על Wolfgangsee היה מצוין. אכלנו למעלה, כולל Backhendlsalat עם עוף, ואז המשכנו לקאפרון ול־Carpe Solem.",
+      summaryRu:"Изначально планировали SchafbergBahn, но билеты оставались только на 14:30, поэтому решили не тратить день на ожидание. Вместо этого поехали в St. Gilgen и поднялись на Zwölferhorn Seilbahn. Канатная дорога оказалась доступнее, удобнее и дешевле поезда, а вид на Wolfgangsee был отличным. Поели наверху, включая Backhendlsalat с курицей, затем поехали в Kaprun и Carpe Solem.",
+      hotel:"Carpe Solem Kaprun Hotel 4-Sterne-Superior by ALPS RESORTS", timingHe:"בוצע בפועל: SchafbergBahn ירד בגלל זמינות 14:30 · Zwölferhorn בצהריים · Kaprun אחר כך", timingRu:"По факту: SchafbergBahn отпал из-за билетов только на 14:30 · Zwölferhorn днём · затем Kaprun", drive:"Seevilla Wolfgangsee → Zwölferhorn Seilbahn, St. Gilgen → Carpe Solem Kaprun", mainHe:"Zwölferhorn + ארוחה על ההר + Carpe Solem", mainRu:"Zwölferhorn + обед на горе + Carpe Solem",
+      route:{o:"Hotel Seevilla Wolfgangsee",d:"Carpe Solem Kaprun Hotel",w:["Zwölferhorn Seilbahn St. Gilgen"]},
+      notesHe:["Zwölferhorn התגלה כתחליף מעולה ל־SchafbergBahn: עלייה מהירה, נוף חזק והרבה פחות התעסקות עם שעות.","SchafbergBahn לא נמחק — הוא נשמר ברשימת 'לטיול הבא'.","ב־Carpe Solem נהנינו מהסאונה ועשינו כמה סבבים של חום, מקלחת קרה ומנוחה."],
+      notesRu:["Zwölferhorn оказался отличной заменой SchafbergBahn: быстрый подъём, сильные виды и гораздо меньше зависимости от расписания.","SchafbergBahn не удалён — он сохранён в списке «на следующую поездку».","В Carpe Solem наслаждались сауной и сделали несколько циклов жара, холодного душа и отдыха."],
+      actions:[{t:"url",he:"🚠 Zwölferhorn Seilbahn",ru:"🚠 Zwölferhorn Seilbahn",url:"https://www.zwoelferhorn.at/en/"},{t:"map",he:"🅿️ Zwölferhorn",ru:"🅿️ Zwölferhorn",q:"Zwölferhorn Seilbahn St. Gilgen"},{t:"map",he:"🏨 Carpe Solem",ru:"🏨 Carpe Solem",q:"Carpe Solem Kaprun Hotel"}],
+      recs:[]
     },
     {
       iso:"2026-09-20", date:"20.9", wdHe:"ראשון", wdRu:"воскресенье", badge:"booked", badgeHe:"✅ TAUERN SPA סגור", badgeRu:"✅ TAUERN SPA забронирован",
