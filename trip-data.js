@@ -4,14 +4,14 @@ window.TRIP_DATA = {
     ["17.9", "Kempinski Hotel Berchtesgaden"],
     ["18.9", "Hotel Seevilla Wolfgangsee"],
     ["19.9", "Carpe Solem Kaprun Hotel 4-Sterne-Superior by ALPS RESORTS"],
-    ["20–22.9", "TAUERN SPA Zell am See – Kaprun"]
+    ["20–22.9", "TAUERN SPA Zell am See – Kaprun"],
+    ["22.9", "Post am See, Traunsee – 4 Stern Superior"],
+    ["23–25.9", "A by Adina Vienna · Superior Studio 39 m²"]
   ],
   open: [
-    ["22–24.9", "מלון Hallstatt / Obertraun", "Отель Hallstatt / Obertraun"],
-    ["24.9", "מלון בווינה", "Отель в Вене"],
     ["25.9", "להזמין Sandbox VR בבוקר, עדיפות 10:00 / 10:40", "Забронировать Sandbox VR утром, лучше 10:00 / 10:40"]
   ],
-  routeStops: ["Salzburg", "Berchtesgaden", "Königssee", "Wolfgangsee", "St. Gilgen / Zwölferhorn", "Kaprun", "Gosausee", "Hallstatt", "Vienna", "VIE"],
+  routeStops: ["Salzburg", "Berchtesgaden", "Königssee", "Wolfgangsee", "St. Gilgen / Zwölferhorn", "Kaprun", "Traunkirchen / Traunsee", "Vienna", "VIE"],
   nextTrip: [
     {n:"SchafbergBahn",i:"🚂",he:"נשמר לטיול הבא",ru:"Оставили на следующую поездку",dh:"רכבת השיניים עד Schafbergspitze. ב־19.9 נשארו כרטיסים רק ל־14:30, אז בחרנו לא לבזבז חצי יום ולשמור את החוויה לפעם הבאה.",dr:"Зубчатая железная дорога до Schafbergspitze. 19.9 оставались билеты только на 14:30, поэтому решили не терять полдня и оставить поездку на следующий раз.",q:"SchafbergBahn St Wolfgang"},
     {n:"FANTASIANA Erlebnispark",i:"🎢",he:"פארק שעשועים",ru:"Парк аттракционов",dh:"היה אופציה ליום המעבר ל־Wolfgangsee, אבל בפועל בחרנו ליהנות מהמלונות. נשמר כאופציה לטיול הבא.",dr:"Был вариантом на день переезда к Wolfgangsee, но мы выбрали время в отелях. Оставляем на следующую поездку.",q:"FANTASIANA Erlebnispark Strasswalchen"},
@@ -93,57 +93,56 @@ window.TRIP_DATA = {
       ]
     },
     {
-      iso:"2026-09-22", date:"22.9", wdHe:"שלישי", wdRu:"вторник", badge:"open", badgeHe:"🟡 מלון פתוח", badgeRu:"🟡 Отель ещё не выбран",
-      titleHe:"Gosausee → Hallstatt", titleRu:"Gosausee → Hallstatt",
-      summaryHe:"בוקר רגוע ב־TAUERN SPA ואז Gosausee: אגם, Dachstein, קפה וצילום בלי מסלול קשה. משם ממשיכים ל־Hallstatt / Obertraun.", summaryRu:"Спокойное утро в TAUERN SPA, затем Gosausee: озеро, Dachstein, кофе и фотографии без тяжёлого маршрута. После этого — Hallstatt / Obertraun.",
-      hotel:"Hallstatt / Obertraun", timingHe:"בוקר רגוע אחרי ארוחת בוקר וספא", timingRu:"Спокойное утро после завтрака и SPA", drive:"Kaprun → Gosausee → Hallstatt", mainHe:"Gosausee + Hallstatt", mainRu:"Gosausee + Hallstatt",
-      route:{o:"TAUERN SPA Zell am See – Kaprun",d:"Hallstatt, Austria",w:["Vorderer Gosausee, Gosau"]},
-      notesHe:["מערות הקרח ירדו מהמסלול 😄","לא חייבים להקיף את כל האגם — נהנים בקצב שלנו."], notesRu:["Ледяные пещеры окончательно убраны из маршрута 😄","Не обязательно обходить всё озеро — отдыхаем в своём темпе."],
-      actions:[{t:"map",he:"🅿️ Gosausee",ru:"🅿️ Gosausee",q:"Parkplatz Vorderer Gosausee"}],
-      recs:[
-        {n:"Seecafé Hallstatt",i:"☕",he:"קפה מול האגם",ru:"Кафе у озера",dh:"פשוט, יפה ונוח לקפה או משהו מתוק מול המים.",dr:"Простой и красивый вариант для кофе и десерта у воды.",q:"Seecafé Hallstatt"},
-        {n:"Bräugasthof Hallstatt",i:"🍽️",he:"מסעדה",ru:"Ресторан",dh:"אוכל אוסטרי במיקום נוח בתוך Hallstatt.",dr:"Австрийская кухня в удобном месте в Hallstatt.",q:"Bräugasthof Hallstatt"}
-      ]
+      iso:"2026-09-22", date:"22.9", wdHe:"שלישי", wdRu:"вторник", badge:"booked", badgeHe:"✅ Post am See סגור", badgeRu:"✅ Post am See забронирован",
+      titleHe:"TAUERN SPA → Post am See · מפצלים את הדרך לווינה", titleRu:"TAUERN SPA → Post am See · делим дорогу до Вены",
+      summaryHe:"עוזבים את Kaprun בקצב רגוע ונוסעים ל־Traunkirchen. בחרנו ב־Post am See בעיקר כדי לפצל את הדרך לווינה לשני ימי נסיעה נוחים במקום יום אחד ארוך. אחרי ההגעה לא רודפים אחרי אטרקציות — נהנים מהאגם, מה־Rooftop BergSPA, מבריכת האינפיניטי ומהמלון עצמו.",
+      summaryRu:"Спокойно выезжаем из Kaprun и едем в Traunkirchen. Post am See выбрали прежде всего для того, чтобы разделить дорогу до Вены на два комфортных дня вместо одного длинного переезда. После приезда никуда не спешим: озеро, Rooftop BergSPA, infinity-бассейн и сам отель.",
+      hotel:"Post am See, Traunsee – 4 Stern Superior", timingHe:"בוקר רגוע ב־TAUERN SPA · יציאה אחרי ארוחת בוקר וצ׳ק־אאוט", timingRu:"Спокойное утро в TAUERN SPA · выезд после завтрака и check-out", drive:"Kaprun → Traunkirchen · נסיעה נוחה באמצע הדרך לווינה", mainHe:"Post am See + Rooftop BergSPA + Traunsee", mainRu:"Post am See + Rooftop BergSPA + Traunsee",
+      route:{o:"TAUERN SPA Zell am See – Kaprun",d:"Post am See, Traunkirchen"},
+      notesHe:["Hallstatt, Gosausee ו־5fingers ירדו מהמסלול בהחלטה שלנו — כבר ראינו מספיק נוף לטיול הזה.","המטרה של היום היא לפצל את הנהיגה וליהנות מהמלון, לא למלא עוד רשימת אטרקציות.","בערב אפשר פשוט לאכול במלון ולהישאר באווירה של Traunsee."],
+      notesRu:["Hallstatt, Gosausee и 5fingers убрали из маршрута по нашему решению — пейзажей в этой поездке уже было достаточно.","Цель дня — разделить дорогу и насладиться отелем, а не заполнять ещё один список достопримечательностей.","Вечером можно просто поужинать в отеле и остаться в атмосфере Traunsee."],
+      actions:[{t:"map",he:"🏨 Post am See",ru:"🏨 Post am See",q:"Post am See Traunkirchen"},{t:"url",he:"♨️ Rooftop BergSPA",ru:"♨️ Rooftop BergSPA",url:"https://www.hotel-post-traunkirchen.at/en/rooftop-mountain-spa-wellbeing"}],
+      recs:[]
     },
     {
-      iso:"2026-09-23", date:"23.9", wdHe:"רביעי", wdRu:"среда", badge:"weather", badgeHe:"🌦️ תלוי ראות", badgeRu:"🌦️ Зависит от видимости",
-      titleHe:"Krippenstein + 5fingers", titleRu:"Krippenstein + 5fingers",
-      summaryHe:"אחרי בוקר רגוע עולים ל־Krippenstein לתצפיות ול־5fingers, בתנאי שהראות טובה. מריה לא חייבת לעלות על פלטפורמות שמרגישות לה גבוהות מדי. אחר הצהריים חוזרים ל־Hallstatt.",
-      summaryRu:"После спокойного утра поднимаемся на Krippenstein к смотровым площадкам и 5fingers, если видимость хорошая. Марии не обязательно выходить на платформы, если высота ей не понравится. После обеда возвращаемся в Hallstatt.",
-      hotel:"Hallstatt / Obertraun", timingHe:"יציאה רגועה סביב 10:00–11:00, בהתאם לראות ולשעות הרכבל", timingRu:"Спокойный выезд около 10:00–11:00, в зависимости от видимости и расписания канатной дороги", drive:"Hallstatt / Obertraun → Krippenstein → Hallstatt", mainHe:"Dachstein Krippenstein + 5fingers", mainRu:"Dachstein Krippenstein + 5fingers",
-      route:{o:"Hallstatt, Austria",d:"Hallstatt, Austria",w:["Dachstein Krippenstein Seilbahn, Obertraun"]},
-      notesHe:["5fingers הוא היילייט שלא מורידים מהמסלול בלי החלטה שלנו.","אם הכול בעננים — לא עולים סתם; מזיזים או מחליטים יחד מה עושים.","בלי מערת קרח. נשארים בחוץ, בנוף."],
-      notesRu:["5fingers — один из главных пунктов поездки и не убирается без нашего решения.","Если всё в облаках — не поднимаемся зря; переносим или решаем вместе, что делать.","Без ледяных пещер. Остаёмся снаружи и наслаждаемся видами."],
-      actions:[{t:"url",he:"🚠 Krippenstein",ru:"🚠 Krippenstein",url:"https://www.dachstein-salzkammergut.com/en/"},{t:"map",he:"🅿️ תחנת הרכבל",ru:"🅿️ Канатная дорога",q:"Dachstein Krippenstein Seilbahn Parkplatz Obertraun"}],
-      recs:[{n:"The Wolf Cafe Bistro Bar",i:"☕",he:"קפה / בר קטן",ru:"Кафе / небольшой бар",dh:"אופציה קלילה אם לא מתחשק ערב מסעדה מלא.",dr:"Лёгкий вариант, если не хочется полноценного ужина.",q:"The Wolf Cafe Bistro Bar Hallstatt"}]
+      iso:"2026-09-23", date:"23.9", wdHe:"רביעי", wdRu:"среда", badge:"booked", badgeHe:"✅ וינה סגורה", badgeRu:"✅ Вена забронирована",
+      titleHe:"Post am See → Vienna · A by Adina", titleRu:"Post am See → Vienna · A by Adina",
+      summaryHe:"בוקר רגוע על Traunsee ואז ממשיכים לווינה. צ׳ק־אין ב־A by Adina Vienna בחדר Superior Studio של 39 מ״ר. משאירים את הרכב בחניון באזור המלון, ובווינה עוברים ל־U1 ו־Uber — הרבה יותר פשוט מחיפוש חניה בכל יעד.",
+      summaryRu:"Спокойное утро на Traunsee, затем едем в Вену. Заселяемся в A by Adina Vienna в Superior Studio площадью 39 м². Машину оставляем на парковке возле отеля, а по Вене передвигаемся на U1 и Uber — это проще, чем каждый раз искать парковку.",
+      hotel:"A by Adina Vienna · Superior Studio 39 m²", timingHe:"יציאה רגועה מ־Post am See · צ׳ק־אין בווינה אחר הצהריים", timingRu:"Спокойный выезд из Post am See · check-in в Вене во второй половине дня", drive:"Traunkirchen → Vienna · בערך חצי שני של הדרך", mainHe:"A by Adina + בריכה/סאונה + ערב ראשון בווינה", mainRu:"A by Adina + бассейн/сауна + первый вечер в Вене",
+      route:{o:"Post am See, Traunkirchen",d:"A by Adina Vienna",w:["Prater, Vienna"]},
+      notesHe:["הוזמן Superior Studio 39 מ״ר, Non-refundable, בלי ארוחת בוקר.","במלון יש בריכת אינפיניטי מחוממת, סאונה ו־Steam Room — נחמד לחזור אליהם אחרי העיר.","חניית המלון יקרה; התכנון הוא להשתמש בחניון הציבורי Garage Reichsbrücke באזור במקום.","לא חייבים להספיק אטרקציה גדולה ביום ההגעה. אם יש כוח — Prater או מרכז העיר; אם לא, נהנים מהמלון."],
+      notesRu:["Забронирован Superior Studio 39 м², Non-refundable, без завтрака.","В отеле есть подогреваемый infinity-бассейн, сауна и steam room — приятно вернуться после города.","Парковка отеля дорогая; план — использовать общественный Garage Reichsbrücke рядом.","В день приезда не обязательно делать большую достопримечательность. Если будут силы — Prater или центр; если нет — просто отдыхаем в отеле."],
+      actions:[{t:"map",he:"🏨 A by Adina Vienna",ru:"🏨 A by Adina Vienna",q:"A by Adina Vienna Danube"},{t:"map",he:"🅿️ Garage Reichsbrücke",ru:"🅿️ Garage Reichsbrücke",q:"Garage Reichsbrücke Vienna"},{t:"map",he:"🎡 Prater",ru:"🎡 Prater",q:"Prater Wien"}],
+      recs:[]
     },
     {
-      iso:"2026-09-24", date:"24.9", wdHe:"חמישי", wdRu:"четверг", badge:"open", badgeHe:"🟡 מלון וינה פתוח", badgeRu:"🟡 Отель в Вене ещё не выбран",
-      titleHe:"Hallstatt → Vienna · Madame Tussauds + Prater", titleRu:"Hallstatt → Vienna · Madame Tussauds + Prater",
-      summaryHe:"אין עצירת ביניים מתוכננת. אחרי שבוע של אגמים והרים נוסעים ישר לווינה: עיר, צילום, Madame Tussauds, Prater, אוכל ואווירת ערב.", summaryRu:"Запланированных остановок по дороге нет. После недели озёр и гор едем прямо в Вену: город, фотографии, Madame Tussauds, Prater, еда и вечерняя атмосфера.",
-      hotel:"Vienna", timingHe:"יציאה מומלצת מ־Hallstatt סביב 08:30–09:00", timingRu:"Рекомендуемый выезд из Hallstatt около 08:30–09:00", drive:"Hallstatt → Vienna ישירות · בערך 3:10 שעות נטו", mainHe:"Madame Tussauds + Prater + ערב בווינה", mainRu:"Madame Tussauds + Prater + вечер в Вене",
-      route:{o:"Hallstatt, Austria",d:"Vienna, Austria"},
-      notesHe:["Madame Tussauds נמצא בתוך אזור Prater — מתחבר טבעי.","Prater לא צריך לסיים. מסתובבים ועושים רק מה שמושך אתכם.","בונוס אם מגיעים מוקדם ויש כוח: Time Travel Vienna עם אודיו ברוסית. הראשון שיורד אם היום מתעכב."], notesRu:["Madame Tussauds находится прямо в районе Prater — удобно объединить.","Prater не нужно проходить весь. Выбираем только то, что понравится.","Бонус, если приедете рано: Time Travel Vienna с русским аудио. Это первое, что убираем, если день задерживается."],
+      iso:"2026-09-24", date:"24.9", wdHe:"חמישי", wdRu:"четверг", badge:"booked", badgeHe:"🏙️ יום מלא בווינה", badgeRu:"🏙️ Полный день в Вене",
+      titleHe:"Vienna · Prater + מרכז העיר", titleRu:"Вена · Prater + центр",
+      summaryHe:"יום מלא בווינה בלי להזיז את הרכב. משתמשים ב־U1 או Uber לפי מה שנוח: Prater ו־Madame Tussauds, מרכז העיר, אוכל ושיטוט. חוזרים בערב ל־A by Adina לבריכה ולסאונה אם מתחשק.",
+      summaryRu:"Полный день в Вене без машины. Используем U1 или Uber: Prater и Madame Tussauds, центр города, еда и прогулки. Вечером возвращаемся в A by Adina — при желании бассейн и сауна.",
+      hotel:"A by Adina Vienna · Superior Studio 39 m²", timingHe:"יום חופשי · בלי לחץ ובלי רכב", timingRu:"Свободный день · без спешки и без машины", drive:"הרכב נשאר בחניון · U1 / Uber", mainHe:"Prater + Madame Tussauds + מרכז וינה", mainRu:"Prater + Madame Tussauds + центр Вены",
+      route:{o:"A by Adina Vienna",d:"A by Adina Vienna",w:["Prater, Vienna","Stephansplatz, Vienna"]},
+      notesHe:["אין צורך להסתובב עם הרכב בתוך וינה — החניה והנהיגה בעיר רק מוסיפות התעסקות.","Prater ו־Madame Tussauds מתחברים טבעי באותו אזור.","אם נשאר כוח ורוצים עוד משהו במרכז: Time Travel Vienna נשאר אופציונלי בלבד.","לא ממלאים את היום בכוח; זה היום האחרון המלא של הטיול."],
+      notesRu:["По Вене на машине ездить не нужно — парковка и городской трафик только добавляют хлопот.","Prater и Madame Tussauds удобно объединяются в одном районе.","Если останутся силы и захочется ещё чего-то в центре: Time Travel Vienna остаётся только опцией.","Не перегружаем день — это последний полный день поездки."],
       actions:[
         {t:"url",he:"📸 Madame Tussauds",ru:"📸 Madame Tussauds",url:"https://www.madametussauds.com/wien/en/"},
         {t:"url",he:"🎡 Prater",ru:"🎡 Prater",url:"https://www.praterwien.com/en/home"},
-        {t:"map",he:"🅿️ Prater",ru:"🅿️ Prater",q:"Parkhaus Prater Wien"},
+        {t:"map",he:"🏛️ Stephansplatz",ru:"🏛️ Stephansplatz",q:"Stephansplatz Vienna"},
         {t:"url",he:"🎬 Time Travel — אופציונלי",ru:"🎬 Time Travel — по желанию",url:"https://www.timetravel-vienna.at/en/"}
       ],
       recs:[
         {n:"Schweizerhaus",i:"🍽️",he:"אוכל בתוך Prater",ru:"Ресторан в Prater",dh:"מקום אייקוני ונוח אם רוצים להישאר בתוך האווירה של Prater.",dr:"Знаковое место прямо в Prater — удобно не выходить из атмосферы парка.",q:"Schweizerhaus Wien Prater"},
-        {n:"Plachutta Wollzeile",i:"🍽️",he:"ארוחת ערב וינאית",ru:"Венский ужин",dh:"בחירה טובה אם רוצים ארוחה וינאית קלאסית ומושקעת יותר.",dr:"Хороший выбор для более классического венского ужина.",q:"Plachutta Wollzeile Vienna"},
-        {n:"Das LOFT",i:"🌃",he:"רופטופ בר",ru:"Rooftop-бар",dh:"לסיים את הערב עם דרינק ונוף אמיתי על וינה.",dr:"Закончить вечер напитком и красивым видом на Вену.",q:"Das LOFT Vienna"},
-        {n:"Graben + Kärntner Straße",i:"🛍️",he:"שיטוט + חנויות",ru:"Прогулка + магазины",dh:"רחובות יפים, צילום וקצת חנויות בלי להפוך את היום ליום קניות.",dr:"Красивые улицы, фото и немного магазинов без отдельного дня шопинга.",q:"Graben Vienna"}
+        {n:"Plachutta Wollzeile",i:"🍽️",he:"ארוחת ערב וינאית",ru:"Венский ужин",dh:"בחירה טובה אם רוצים ארוחה וינאית קלאסית ומושקעת יותר.",dr:"Хороший выбор для более классического венского ужина.",q:"Plachutta Wollzeile Vienna"}
       ]
     },
     {
       iso:"2026-09-25", date:"25.9", wdHe:"שישי", wdRu:"пятница", badge:"flight", badgeHe:"✈️ טיסה 18:30", badgeRu:"✈️ Вылет 18:30",
       titleHe:"Sandbox VR → שדה התעופה · טיסה 18:30", titleRu:"Sandbox VR → аэропорт · вылет 18:30",
       summaryHe:"יום טיסה פשוט בכוונה: ארוחת בוקר, Stranger Things ב־Sandbox VR, ארוחה קלה ואז לשדה בלי להעמיס שום אטרקציה נוספת.", summaryRu:"День вылета специально простой: завтрак, Stranger Things в Sandbox VR, лёгкий обед и затем аэропорт без дополнительных аттракционов.",
-      hotel:"יציאה מהמלון בווינה", timingHe:"Sandbox בבוקר — עדיפות ל־10:00 או 10:40", timingRu:"Sandbox утром — лучше 10:00 или 10:40", drive:"Vienna → Sandbox VR Columbus → Vienna Airport", mainHe:"Stranger Things: Catalyst + טיסה הביתה", mainRu:"Stranger Things: Catalyst + вылет домой",
-      route:{o:"Sandbox VR Vienna Columbus",d:"Vienna International Airport"},
-      notesHe:["Sandbox הוא הדבר היחיד עם שעה קשיחה ביום הזה.","להקדיש בערך שעה כולל הגעה, צ׳ק־אין והחוויה.","להתחיל להתקדם לשדה בערך 14:15–14:30 כדי להשאיר זמן להחזרת הרכב.","Sandbox נמצא ב־Columbus Center / Columbusplatz."], notesRu:["Sandbox — единственное мероприятие дня с фиксированным временем.","Заложить примерно час на прибытие, check-in и саму игру.","Начать ехать в аэропорт примерно в 14:15–14:30, чтобы спокойно вернуть машину.","Sandbox находится в Columbus Center / Columbusplatz."],
+      hotel:"צ׳ק־אאוט A by Adina Vienna", timingHe:"Sandbox בבוקר — עדיפות ל־10:00 או 10:40", timingRu:"Sandbox утром — лучше 10:00 или 10:40", drive:"Vienna → Sandbox VR Columbus → Vienna Airport", mainHe:"Stranger Things: Catalyst + טיסה הביתה", mainRu:"Stranger Things: Catalyst + вылет домой",
+      route:{o:"A by Adina Vienna",d:"Vienna International Airport",w:["Sandbox VR Vienna Columbus"]},
+      notesHe:["בבוקר מוציאים את הרכב מהחניון אחרי הצ׳ק־אאוט ושמים את המזוודות ברכב.","Sandbox הוא הדבר היחיד עם שעה קשיחה ביום הזה.",,"להקדיש בערך שעה כולל הגעה, צ׳ק־אין והחוויה.","להתחיל להתקדם לשדה בערך 14:15–14:30 כדי להשאיר זמן להחזרת הרכב.","Sandbox נמצא ב־Columbus Center / Columbusplatz."], notesRu:["Утром после check-out забираем машину с парковки и кладём багаж в автомобиль.","Sandbox — единственное мероприятие дня с фиксированным временем.",,"Заложить примерно час на прибытие, check-in и саму игру.","Начать ехать в аэропорт примерно в 14:15–14:30, чтобы спокойно вернуть машину.","Sandbox находится в Columbus Center / Columbusplatz."],
       actions:[
         {t:"url",he:"🥽 Sandbox VR",ru:"🥽 Sandbox VR",url:"https://sandboxvr.com/at/vienna/columbus"},
         {t:"url",he:"🎟️ הזמנה Stranger Things",ru:"🎟️ Бронирование Stranger Things",url:"https://sandboxvr.com/at/vienna/columbus/booking/experiences"},
