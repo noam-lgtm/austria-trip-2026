@@ -93,15 +93,19 @@ window.TRIP_DATA = {
       ]
     },
     {
-      iso:"2026-09-22", date:"22.9", wdHe:"שלישי", wdRu:"вторник", badge:"booked", badgeHe:"✅ Post am See סגור", badgeRu:"✅ Post am See забронирован",
-      titleHe:"TAUERN SPA → Post am See · מפצלים את הדרך לווינה", titleRu:"TAUERN SPA → Post am See · делим дорогу до Вены",
-      summaryHe:"עוזבים את Kaprun בקצב רגוע ונוסעים ל־Traunkirchen. בחרנו ב־Post am See בעיקר כדי לפצל את הדרך לווינה לשני ימי נסיעה נוחים במקום יום אחד ארוך. אחרי ההגעה לא רודפים אחרי אטרקציות — נהנים מהאגם, מה־Rooftop BergSPA, מבריכת האינפיניטי ומהמלון עצמו.",
-      summaryRu:"Спокойно выезжаем из Kaprun и едем в Traunkirchen. Post am See выбрали прежде всего для того, чтобы разделить дорогу до Вены на два комфортных дня вместо одного длинного переезда. После приезда никуда не спешим: озеро, Rooftop BergSPA, infinity-бассейн и сам отель.",
-      hotel:"Post am See, Traunsee – 4 Stern Superior", timingHe:"בוקר רגוע ב־TAUERN SPA · יציאה אחרי ארוחת בוקר וצ׳ק־אאוט", timingRu:"Спокойное утро в TAUERN SPA · выезд после завтрака и check-out", drive:"Kaprun → Traunkirchen · נסיעה נוחה באמצע הדרך לווינה", mainHe:"Post am See + Rooftop BergSPA + Traunsee", mainRu:"Post am See + Rooftop BergSPA + Traunsee",
-      route:{o:"TAUERN SPA Zell am See – Kaprun",d:"Post am See, Traunkirchen"},
-      notesHe:["Hallstatt, Gosausee ו־5fingers ירדו מהמסלול בהחלטה שלנו — כבר ראינו מספיק נוף לטיול הזה.","המטרה של היום היא לפצל את הנהיגה וליהנות מהמלון, לא למלא עוד רשימת אטרקציות.","בערב אפשר פשוט לאכול במלון ולהישאר באווירה של Traunsee."],
-      notesRu:["Hallstatt, Gosausee и 5fingers убрали из маршрута по нашему решению — пейзажей в этой поездке уже было достаточно.","Цель дня — разделить дорогу и насладиться отелем, а не заполнять ещё один список достопримечательностей.","Вечером можно просто поужинать в отеле и остаться в атмосфере Traunsee."],
-      actions:[{t:"map",he:"🏨 Post am See",ru:"🏨 Post am See",q:"Post am See Traunkirchen"},{t:"url",he:"♨️ Rooftop BergSPA",ru:"♨️ Rooftop BergSPA",url:"https://www.hotel-post-traunkirchen.at/en/rooftop-mountain-spa-wellbeing"}],
+      iso:"2026-09-22", date:"22.9", wdHe:"שלישי", wdRu:"вторник", badge:"booked", badgeHe:"🚗 Sigmund-Thun + Outlet + Post", badgeRu:"🚗 Sigmund-Thun + Outlet + Post",
+      titleHe:"Sigmund-Thun-Klamm → Designer Outlet Salzburg → Post am See", titleRu:"Sigmund-Thun-Klamm → Designer Outlet Salzburg → Post am See",
+      summaryHe:"אחרי צ׳ק־אאוט מ־TAUERN SPA עשינו את Sigmund-Thun-Klamm — קצר, יפה ומהיר בדיוק כמו שרצינו. משם ממשיכים ל־Designer Outlet Salzburg לעצירת קניות נוחה על הדרך, ואז נוסעים ל־Post am See ב־Traunkirchen כדי לסיים את היום באגם, בספא ובמלון.",
+      summaryRu:"После check-out из TAUERN SPA мы прошли Sigmund-Thun-Klamm — коротко, красиво и быстро, как и хотели. Затем едем в Designer Outlet Salzburg на удобную остановку для шопинга по пути, после чего продолжаем в Post am See в Traunkirchen и заканчиваем день у озера, в SPA и отеле.",
+      hotel:"Post am See, Traunsee – 4 Stern Superior", timingHe:"Sigmund-Thun הסתיים לפני הצהריים · Outlet בצהריים · Post am See אחר הצהריים", timingRu:"Sigmund-Thun завершён до полудня · Outlet днём · Post am See во второй половине дня", drive:"Kaprun → Salzburg Outlet → Traunkirchen", mainHe:"Sigmund-Thun-Klamm + Designer Outlet Salzburg + Post am See", mainRu:"Sigmund-Thun-Klamm + Designer Outlet Salzburg + Post am See",
+      route:{o:"Sigmund-Thun-Klamm, Kaprun",d:"Post am See, Traunkirchen",w:["Designer Outlet Salzburg, Kasernenstraße 1, Wals-Himmelreich"]},
+      notesHe:["Sigmund-Thun-Klamm בוצע בבוקר אחרי הצ׳ק־אאוט.","האאוטלט הוא עצירת קניות בדרך, בלי להוסיף אטרקציה גדולה נוספת.","המטרה היא להגיע ל־Post am See אחר הצהריים ולהשאיר זמן ל־Rooftop BergSPA ול־Traunsee.","אם מזג האוויר והזמינות מתאימים, אפשר לבדוק SUP או קיאק במלון."],
+      notesRu:["Sigmund-Thun-Klamm прошли утром после check-out.","Outlet — остановка для шопинга по пути, без ещё одной большой достопримечательности.","Цель — приехать в Post am See во второй половине дня и оставить время на Rooftop BergSPA и Traunsee.","Если погода и наличие позволяют, можно проверить SUP или каяк в отеле."],
+      actions:[
+        {t:"map",he:"🛍️ Designer Outlet Salzburg",ru:"🛍️ Designer Outlet Salzburg",q:"Designer Outlet Salzburg Kasernenstraße 1 Wals-Himmelreich"},
+        {t:"map",he:"🏨 Post am See",ru:"🏨 Post am See",q:"Post am See Traunkirchen"},
+        {t:"url",he:"♨️ Rooftop BergSPA",ru:"♨️ Rooftop BergSPA",url:"https://www.hotel-post-traunkirchen.at/en/rooftop-mountain-spa-wellbeing"}
+      ],
       recs:[]
     },
     {
