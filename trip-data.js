@@ -25,7 +25,7 @@ window.TRIP_DATA = {
     {
       iso:"2026-09-16", date:"16.9", wdHe:"רביעי", wdRu:"среда", badge:"booked", badgeHe:"✅ בוצע", badgeRu:"✅ Выполнено",
       titleHe:"זלצבורג → Klosterhof · יום ראשון מוצלח", titleRu:"Зальцбург → Klosterhof · удачный первый день",
-      summaryHe:"בפועל פתחנו את הטיול בדיוק בקצב שהתאים לנו: ארוחת בוקר מצוינת ב־220GRAD Rupertinum, שיטוט רגוע בעיר העתיקה של זלצבורג, קצת הלכנו לאיבוד 😄 ואז נסיעה נופית ל־Klosterhof. אחר הצהריים והערב הוקדשו למלון, לספא, לבריכות ולמנוחה — ומריה ממש אהבה את המקום.",
+      summaryHe:"בפועל פתחנו את הטיול בדיוק בקצב שהתאים לנו: ארוחת בוקר מצוינת ב־220GRAD Rupertinum, שיטוט רגוע בעיר העתיקה של זלצבורג, קצת הלכנו לאיבוד 😄 ואז נסיעה נופית ל־Klosterhof. אחר הצהריים והערב הוקדשו למלון, לספא, לבריכות ולמנוחה — וממש אהבנו את המקום.",
       summaryRu:"Фактически первый день прошёл именно в нужном нам темпе: отличный завтрак в 220GRAD Rupertinum, спокойная прогулка по Старому городу Зальцбурга, немного заблудились 😄, затем красивая дорога в Klosterhof. Вторая половина дня и вечер — отель, SPA, бассейны и отдых; Марии место очень понравилось.",
       hotel:"Klosterhof – Alpine Hideaway & Spa", timingHe:"בוצע בפועל: זלצבורג בבוקר · נסיעה נופית · אחר הצהריים והערב במלון", timingRu:"По факту: Зальцбург утром · живописная дорога · вторая половина дня и вечер в отеле", drive:"Salzburg → Klosterhof", mainHe:"220GRAD + זלצבורג העתיקה + Klosterhof", mainRu:"220GRAD + Старый Зальцбург + Klosterhof",
       route:{o:"220GRAD Rupertinum, Salzburg",d:"Klosterhof Alpine Hideaway & Spa, Bayerisch Gmain",w:["Salzburg Altstadt"]},
@@ -48,7 +48,7 @@ window.TRIP_DATA = {
     {
       iso:"2026-09-18", date:"18.9", wdHe:"שישי", wdRu:"пятница", badge:"booked", badgeHe:"✅ בוצע · יום מלון", badgeRu:"✅ Выполнено · день отелей",
       titleHe:"Kempinski עד 17:00 → Seevilla · בלי לרדוף אחרי אטרקציות", titleRu:"Kempinski до 17:00 → Seevilla · без гонки за достопримечательностями",
-      summaryHe:"בפועל לא עשינו אף אטרקציה ביום הזה — ובדיעבד זו הייתה החלטה מצוינת. נשארנו ב־Kempinski עד 17:00 ונהנינו מהמלון, הספא והנוף, ואז נסענו ישירות ל־Hotel Seevilla Wolfgangsee. הגענו בערך ב־18:15, קיבלנו חדר מעולה, ומריה אהבה את המקום כבר מהרגע הראשון. ארוחת הערב במסעדת המלון הייתה ממש מעולה.",
+      summaryHe:"בפועל לא עשינו אף אטרקציה ביום הזה — ובדיעבד זו הייתה החלטה מצוינת. נשארנו ב־Kempinski עד 17:00 ונהנינו מהמלון, הספא והנוף, ואז נסענו ישירות ל־Hotel Seevilla Wolfgangsee. הגענו בערך ב־18:15, קיבלנו חדר מעולה, והמקום מצא חן בעינינו כבר מהרגע הראשון. ארוחת הערב במסעדת המלון הייתה ממש מעולה.",
       summaryRu:"В этот день мы фактически не делали ни одной достопримечательности — и это оказалось отличным решением. Остались в Kempinski до 17:00, наслаждались отелем, SPA и видом, затем поехали прямо в Hotel Seevilla Wolfgangsee. Приехали примерно в 18:15, получили отличный номер, и Марии место понравилось сразу. Ужин в ресторане отеля был действительно великолепным.",
       hotel:"Hotel Seevilla Wolfgangsee", timingHe:"בוצע בפועל: Kempinski עד 17:00 · הגעה ל־Seevilla ב־18:15 · ארוחת ערב במלון", timingRu:"По факту: Kempinski до 17:00 · Seevilla в 18:15 · ужин в отеле", drive:"Kempinski Hotel Berchtesgaden → Hotel Seevilla Wolfgangsee", mainHe:"זמן איכות במלונות + Seevilla", mainRu:"Время в отелях + Seevilla",
       route:{o:"Kempinski Hotel Berchtesgaden",d:"Hotel Seevilla Wolfgangsee"},
@@ -82,7 +82,7 @@ window.TRIP_DATA = {
     {
       iso:"2026-09-21", date:"21.9", wdHe:"שני", wdRu:"понедельник", badge:"booked", badgeHe:"✅ TAUERN SPA סגור", badgeRu:"✅ TAUERN SPA забронирован",
       titleHe:"מאגרי Kaprun + ספא", titleRu:"Водохранилища Kaprun + SPA",
-      summaryHe:"יום של מים, סכרים והרים ב־Mooserboden. הסיור בתוך הסכר הוא בונוס הנדסי בשבילך, אבל לא חובה למריה. אם נשאר כוח אפשר Sigmund-Thun-Klamm.", summaryRu:"День воды, плотин и гор в Mooserboden. Экскурсия внутри плотины — инженерный бонус для Ноама, но для Марии не обязательна. Если останутся силы — Sigmund-Thun-Klamm.",
+      summaryHe:"יום של מים, סכרים והרים ב־Mooserboden. הסיור בתוך הסכר הוא בונוס הנדסי בשבילך, אבל לא חובה אם לא מתחשק. אם נשאר כוח אפשר Sigmund-Thun-Klamm.", summaryRu:"День воды, плотин и гор в Mooserboden. Экскурсия внутри плотины — интересный инженерный бонус, но она не обязательна. Если останутся силы — Sigmund-Thun-Klamm.",
       hotel:"TAUERN SPA Zell am See – Kaprun", timingHe:"יציאה 08:30–09:00", timingRu:"Выезд 08:30–09:00", drive:"TAUERN SPA → Kesselfall → TAUERN SPA", mainHe:"Kaprun High Mountain Reservoirs / Mooserboden", mainRu:"Kaprun High Mountain Reservoirs / Mooserboden",
       route:{o:"TAUERN SPA Zell am See – Kaprun",d:"TAUERN SPA Zell am See – Kaprun",w:["Kesselfall Alpenhaus, Kaprun","Sigmund-Thun-Klamm, Kaprun"]},
       notesHe:["Sigmund-Thun-Klamm רק אם באמת יש כוח.","אם עייפים — חוזרים לספא. לא ממלאים יום בכוח."], notesRu:["Sigmund-Thun-Klamm только если действительно будут силы.","Если устали — возвращаемся в SPA. Не перегружаем день ради галочки."],
